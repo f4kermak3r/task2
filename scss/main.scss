@@ -1,6 +1,4 @@
-@import "./resets";
-@import "./variables";
-@import "./navigation";
+@import "./imports";
 
 .title {
   font-weight: map-get($font-weights, bold);

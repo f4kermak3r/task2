@@ -1,0 +1,36 @@
+.border-short {
+  width: 30%;
+  margin: auto;
+}
+
+.border-full {
+  width: 100%;
+}
+
+.btm-border-electric {
+  border-bottom: 2px solid $main-color;
+}
+
+.btm-border-white-transp {
+  border-bottom: 1px solid white;
+  opacity: 0.5;
+}
+
+.btm-border-gray-transp {
+  border-bottom: 1px solid $gray-color;
+  opacity: 0.4;
+}
+
+.footer {
+  .border {
+    width: 100%;
+    border-bottom: 1px solid $gray-color;
+    opacity: 0.4;
+  }
+}
+
+.border-left {
+  height: 20px;
+  margin: auto;
+  border-left: 2px solid rgba(255, 255, 255, 0.3);
+}

@@ -1,0 +1,136 @@
+.section-4 {
+  width: 100%;
+}
+
+.content-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 50px 100px 50px 100px;
+}
+
+.card {
+  margin-top: 20px;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.card-size {
+  border-radius: 6px;
+  width: 22%;
+}
+
+.card-title-text {
+  font-weight: map-get($font-weights, bold);
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+.card-title-bottom {
+  font-family: Playfair Display, serif;
+  opacity: 0.7;
+}
+
+.card-description-text {
+  color: black;
+  opacity: 0.4;
+  font-family: Roboto, sans-serif;
+  font-weight: 600;
+}
+
+.recommended-container {
+  height: 50px;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 6px;
+  top: 90px;
+}
+
+.card-color-dark {
+  background-color: #38424e;
+  border-radius: 10px;
+}
+
+.card-color-light-dark {
+  background-color: #57687a;
+}
+
+.card-color-electric {
+  background-color: $main-color;
+}
+
+.card-title-color {
+  @include flexCenter;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  flex-direction: column;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  margin-bottom: 42px;
+  height: 400px;
+}
+
+.card-title-color {
+  p {
+    margin: 10px;
+  }
+}
+
+.content-section {
+  .card > {
+    p:not(:nth-child(5))::after {
+      content: "";
+      display: block;
+      height: 5px;
+      width: 80%;
+      border-bottom: 1px solid black;
+      opacity: 0.2;
+      margin: auto;
+    }
+  }
+}
+
+.section-4 {
+  padding-bottom: 50px;
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1150px) {
+  .recommended-container {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .content-section {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 15px 15px 0 15px;
+  }
+
+  .content-section .card {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 800px) {
+  .content-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    gap: 15px;
+    padding: 15px 15px 0 15px;
+  }
+
+  .content-section .card {
+    width: 47%;
+    margin-bottom: 15px;
+  }
+}

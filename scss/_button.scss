@@ -1,0 +1,39 @@
+@mixin defaultButton($backgroundColor, $textColor) {
+  border-radius: 50px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: map-get($font-weights, bold);
+  background-color: $backgroundColor;
+  color: $textColor;
+}
+
+.button {
+  border: none;
+  padding: 20px 35px;
+}
+
+.btn-transparent-white {
+  @include defaultButton(transparent, white);
+  border: 3px solid #fff;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.btn-white {
+  @include defaultButton(rgb(211, 211, 211), black);
+  margin-bottom: 16px;
+}
+
+.color-button {
+  @include defaultButton(rgb(211, 211, 211), black);
+  border: none;
+  padding: 20px 35px;
+  margin-bottom: 16px;
+}
+
+.text-container .color-button {
+  background-color: rgba(0, 0, 0, 0.21);
+  color: white;
+  margin-left: 20px;
+}

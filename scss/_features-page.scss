@@ -1,0 +1,44 @@
+.section-3 {
+  color: white;
+}
+
+.features-bg {
+  background-image: url("../src/features-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.description-text {
+  font-size: 22px;
+  line-height: 28px;
+}
+
+.features-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 50px;
+  padding: 0 50px 100px 50px;
+}
+
+.features-description-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.features-width {
+  width: 33%;
+}
+
+@media only screen and (max-width: 800px) {
+  .features-description-body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .features-width {
+    width: 100%;
+  }
+}
