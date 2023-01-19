@@ -1,0 +1,175 @@
+@import "./resets";
+@import "./variables";
+@import "./navigation";
+
+.title {
+  font-weight: map-get($font-weights, bold);
+  font-family: Roboto, sans-serif;
+  color: $main-color;
+  text-transform: uppercase;
+}
+
+.text-section {
+  width: 40%;
+  margin: auto;
+  padding-top: 50px;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.link-name-text {
+  letter-spacing: 1px;
+  opacity: 0.7;
+  font-size: 1em;
+  font-weight: map-get($font-weights, bold);
+}
+
+.title-text {
+  font-size: 3.5em;
+  font-weight: map-get($font-weights, bold);
+}
+
+.body-text {
+  font-size: 1.25em;
+  opacity: 0.6;
+}
+
+.white-text {
+  color: white;
+}
+
+.gray-text {
+  color: $gray-color;
+}
+
+.circle-text {
+  line-height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: $gray-color;
+  color: white;
+}
+
+.circle {
+  width: 50px;
+}
+
+.font-size-16 {
+  font-size: 16px;
+}
+
+.font-size-18 {
+  font-size: 18px;
+}
+
+.medium-font-size {
+  font-size: 24px;
+}
+
+.big-font-size {
+  font-size: 60px;
+}
+
+.padding-0 {
+  padding: 0;
+}
+
+.padding-10p {
+  padding: 10px;
+}
+
+.margin-auto {
+  margin: auto;
+}
+
+.margin-0 {
+  margin: 0;
+}
+
+.no-top-margin {
+  margin-top: 0;
+}
+
+.small-margin-right {
+  margin-right: 2px;
+}
+
+.sm-margin-bottom {
+  margin-bottom: 15px;
+}
+
+.md-line-height {
+  line-height: 2;
+}
+
+.width-50 {
+  width: 50%;
+}
+
+.black-transparent-bg {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.gray-transparent-bg {
+  background-color: rgba(0, 0, 0, 0.699);
+}
+
+.gray-bg {
+  background-color: #eaeaec;
+}
+
+.electric-bg {
+  background-color: $main-color;
+}
+
+.dark-gray-bg {
+  background-color: #171b24;
+}
+
+.light-gray-bg {
+  background-color: #1c202b;
+}
+
+.roboto-font {
+  font-family: Roboto, sans-serif;
+}
+
+.upper-roboto-font {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+}
+
+.roboto-font-bold {
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+}
+
+.high-z-index {
+  z-index: 10;
+}
+
+.none-list-style {
+  text-decoration: none;
+  list-style: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .bottom-border {
+    margin-bottom: 20px;
+  }
+
+  .title-section {
+    width: 100%;
+  }
+
+  .text-section {
+    margin: auto;
+    width: 80%;
+  }
+
+  .title-text {
+    font-size: 48px;
+  }
+}
