@@ -1,9 +1,6 @@
 .section-7 {
   @include flexCenter;
   height: 400px;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
 }
 
 .text-container {
@@ -19,17 +16,15 @@
     height: auto;
   }
 
-  .section-7 {
-    .text-container {
-      .color-button {
-        margin-left: 0;
-      }
-    }
-  }
-
   .text-container {
     p:nth-child(2) {
       margin-bottom: 20px;
     }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .text-container {
+    width: 70%;
   }
 }

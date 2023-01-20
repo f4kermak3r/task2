@@ -1,7 +1,3 @@
-.section-3 {
-  color: white;
-}
-
 .features-bg {
   background-image: url("../src/features-bg.jpg");
   background-size: cover;
@@ -17,7 +13,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 50px;
+  margin-top: 70px;
   padding: 0 50px 100px 50px;
 }
 
@@ -26,10 +22,15 @@
   flex-direction: row;
   justify-content: space-between;
   gap: 50px;
+  margin-top: 25px;
 }
 
 .features-width {
   width: 33%;
+}
+
+.features-icon {
+  margin-bottom: 25px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -40,5 +41,9 @@
 
   .features-width {
     width: 100%;
+  }
+
+  .features-body-margin-50p {
+    margin-top: 50px;
   }
 }

@@ -38,14 +38,14 @@
 }
 
 .recommended-container {
-  height: 50px;
+  height: $recommended-div-height;
   width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   border-radius: 6px;
-  top: 90px;
+  top: 60px;
 }
 
 .card-color-dark {
@@ -61,11 +61,8 @@
   background-color: $main-color;
 }
 
-.card-title-color {
+.card-title-color:not(:last-child) {
   @include flexCenter;
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
   flex-direction: column;
   color: white;
   font-family: "Roboto", sans-serif;
@@ -79,6 +76,11 @@
   p {
     margin: 10px;
   }
+}
+
+.card-title-padding {
+  padding-top: $recommended-div-height;
+  box-sizing: border-box;
 }
 
 .content-section {
@@ -102,6 +104,14 @@
 @media only screen and (min-width: 800px) and (max-width: 1150px) {
   .recommended-container {
     width: 90%;
+  }
+
+  .card {
+    width: 24%;
+  }
+
+  .card-font-size-responsive {
+    font-size: 35px !important;
   }
 }
 
