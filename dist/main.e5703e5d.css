@@ -21,7 +21,7 @@ a {
 }
 
 .intro-bg {
-  background-image: url("../src/intro-bg.jpg");
+  background-image: url("/intro-bg.7148116a.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -272,7 +272,7 @@ nav a[tabindex]:focus {
 }
 
 .features-bg {
-  background-image: url("../src/features-bg.jpg");
+  background-image: url("/features-bg.b8071f20.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -857,4 +857,6 @@ nav a[tabindex]:focus {
   .title-text {
     font-size: 48px;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=/main.e5703e5d.css.map */
